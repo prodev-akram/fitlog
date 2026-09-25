@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0b0d;
+}
+
+.focus-ring {
+  outline: none;
+}
+.focus-ring:focus-visible {
+  outline: 2px solid #ccff00;
+  outline-offset: 2px;
+}
+
+/* react-toastify theme to match the dark + lime FitLog brand */
+.Toastify__toast {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  border-radius: 0.75rem;
+  background: #1a1d21 !important;
+  color: #f5f6f7 !important;
+  border: 1px solid #2a2e33;
+}
+.Toastify__progress-bar {
+  background: #ccff00 !important;
+}
+.Toastify__close-button {
+  color: #f5f6f7 !important;
+  opacity: 0.7;
+}
