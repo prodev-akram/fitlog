@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { DumbbellIcon } from "./icons.jsx";
 
 export default function Hero() {
@@ -28,12 +29,16 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="relative mx-auto grid w-full max-w-sm place-items-center lg:max-w-md">
-          <div className="aspect-square w-full rounded-xl2 border border-base-border bg-base-surface p-10">
-            <div className="grid h-full place-items-center rounded-xl border border-dashed border-base-border">
-              <DumbbellIcon className="h-20 w-20 text-accent" />
-            </div>
-          </div>
+        <div className="relative mx-auto w-full max-w-sm lg:max-w-md">
+          <div className="absolute inset-0 -z-10 rounded-full bg-accent/10 blur-2xl" />
+          <Image
+            src="/hero-banner.png"
+            alt="Illustration of a muscular figure using a bicep curl machine"
+            width={760}
+            height={760}
+            priority
+            className="mx-auto w-full max-w-sm drop-shadow-2xl lg:max-w-md"
+          />
         </div>
       </div>
     </section>
